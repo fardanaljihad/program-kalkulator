@@ -24,4 +24,28 @@ public class App
             System.out.println("Hasil: " + result);
         }
     }
+
+    public static boolean validateInput(int operand1, int operand2, char operator) 
+    {
+        boolean isValid = true;
+
+        if (operator != '+' && operator != '-' && operator != '*' && operator != '/') 
+        { 
+            System.out.println("Error: Operator tidak valid.");
+            isValid = false;
+        }
+        else if (operand2 == 0 && operator == '/') 
+        {
+            System.out.println("Error: Pembagi tidak boleh nol.");
+            isValid = false;
+        }
+        else if (operand1 < -32768 || operand1 > 32767 || operand2 < -32768 || operand2 > 32767) 
+        { 
+            System.out.println("Error: Operand harus dalam rentang -32,768 hingga 32,767.");
+            isValid = false;
+        }
+
+        return isValid;
+    }
+    
 }
