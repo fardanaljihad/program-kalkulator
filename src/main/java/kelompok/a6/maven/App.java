@@ -47,5 +47,20 @@ public class App
 
         return isValid;
     }
+
+    public static int calculate(int operand1, int operand2, char operator) {
+        switch (operator) {
+            case '+':
+                return operand1 + operand2;
+            case '-':
+                return operand1 - operand2;
+            case '*':
+                return operand1 * operand2;
+            case '/':
+                return operand1 / operand2;
+            default:
+                return 0;
+        }
+    }
     
 }
