@@ -2,6 +2,21 @@
 
 Program kalkulator dengan unit testing menggunakan build tools Maven.
 
+<details><summary><b>Project Structure</b></summary>
+```bash
+program-kalkulator/
+├   ├── src/
+├   ├   ├── main/java/kelompok/a6/maven/
+├   ├   ├   └── App.java
+├   ├   └── test/java/kelompok/a6/maven/
+├   ├   ├   └── AppTest.tsx
+├   └── target/
+├── .gitignore
+├── pom.xml  
+└── README.md
+```
+</details>
+
 ## Author
 
 - Fardan Al Jihad
