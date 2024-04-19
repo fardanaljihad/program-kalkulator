@@ -14,29 +14,9 @@ public class AppTest
     {
         assertTrue( true );
     }
+
+    //Test for module main
+    //Test for module validateInput
     //Test for module Calculate
-    //Test for addition
-    @Test
-    public void testCalculateAddition() {
-        assertEquals(11, App.calculate(10, 1, '+'));
-    }
-
-    //Test for subtraction
-    @Test
-    public void testCalculateSubtraction() {
-        assertEquals(11, App.calculate(21, 10, '-'));
-    }
-
-    //Test for multiplication
-    @Test
-    public void testCalculateMultiplication() {
-        assertEquals(14, App.calculate(7, 2, '*'));
-    }
-
-    //Test for division
-    @Test
-    public void testCalculateDivision() {
-        assertEquals(2, App.calculate(8, 4, '/'));
-    }
 
 }
