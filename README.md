@@ -17,6 +17,26 @@ program-kalkulator/
 └── README.md
 ```
 
+## How to run Program
+
+1. Clone Project
+```shell
+git clone https://github.com/fardanaljihad/program-kalkulator.git
+```
+2. Open Terminal / CMD
+3. Install Dependencies
+```shell
+mvn install
+```
+4. Build Program
+```shell
+mvn package
+```
+5. Run Program
+```shell
+java -cp .\target\program-kalkulator-1.0-SNAPSHOT.jar kelompok.a6.maven.App
+```
+   
 ## How to run test cases
 
 1. Open the terminal by pressing `Ctrl + Shift + ~`.
