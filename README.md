@@ -1,6 +1,8 @@
 # Program Kalkulator Kelompok A6
 
-Program kalkulator dengan unit testing menggunakan build tools Maven.
+Program kalkulator dengan unit testing menggunakan build tools Maven. 
+<br>
+Program Kalkulator ini merupakan sebuah proyek sederhana yang menyediakan fungsi tambah, kurang, kali, dan bagi. Pengguna dapat memasukkan dua operand dan memilih operator yang ingin digunakan. Proses perhitungan dilakukan dengan memanggil modul terisolasi yang melakukan validasi input dan operasi perhitungan. Validasi meliputi pengecekan apakah input adalah angka, apakah angka berada dalam range yang diizinkan, apakah operator yang dimasukkan valid, dan apakah pembagi tidak nol. Jika semua validasi berhasil, perhitungan dilanjutkan dan hasilnya ditampilkan; jika tidak, pesan error yang sesuai akan ditampilkan.
 
 <img src="https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white"> <img src="https://img.shields.io/badge/-Maven-C71A36?style=flat&logo=apache-maven&logoColor=white"> <img src="https://img.shields.io/badge/-JUnit-25A162?style=flat&logo=junit&logoColor=white"> 
 
@@ -44,7 +46,25 @@ mvn package
 ```shell
 java -cp .\target\program-kalkulator-1.0-SNAPSHOT.jar kelompok.a6.maven.App
 ```
-   
+
+## List Test Case
+|No  | Test Case Name | Modul Test Name |
+|:---|:---------------|:----------------|
+| 1. | Menginputkan nilai operand yang di luar batas bawah nilai integer           | WithInputBelowLowerLimittestMain |
+| 2. | Menginputkan nilai operand yang dl iuar batas atas nilai integer| testMainWithInputBeyondUpperLimit |
+| 3. | Memeriksa nilai operator yang tidak valid           | testValidateInputInvalidOperator |
+| 4. | Memeriksa operasi pembagian dengan pembagi bernilai nol           | testValidateInputDivisionByZero |
+| 5. | Menginputkan operator khusus yang selain (+, -, / , *) | testMainwithInvalidOperator |
+| 6. | Kalkulasi  dua bilangan dengan menggunakan operator kurang           | testKalkulasiOperatorKurang |
+| 7. | Kalkulasi dua bilangan dengan menggunakan operator tambah           | testKalkulasiOperatorTambah |
+| 8. | Memeriksa nilai operand di luar batas bawah yang diizinkan           | testValidateInputOutOfRangeLowerBound |
+| 9. | Menginputkan Operand1, Operand2  dan Operator yang valid           | testMainwithValidInput |
+|10. | Menginputkan pembagian bilangan dengan angka 0  | testMainWithDivisionByZero |
+|11. | Kalkulasi  dua bilangan dengan menggunakan operator bagi           | testKalkulasiOperatorBagi |
+|12. | Kalkulasi  dua bilangan dengan menggunakan operator kali           | testKalkulasiOperatorKali |
+|13. | Memeriksa nilai operator dan nilai operand yang valid           | testValidateInputValid |
+|14. | Memeriksa nilai operand di luar batas atas yang diizinkan           | testValidateInputOutOfRangeUpperBound |
+
 ## How to run test cases
 
 1. Open the terminal by pressing `Ctrl + Shift + ~`.
